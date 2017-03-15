@@ -1,0 +1,228 @@
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<section class="container" id="Survey" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p>&nbsp;&nbsp;</p>
+
+<p>When we communicate, our speech is a combination of&nbsp;words and expressive vocal gestures. &nbsp;Most of our conscious attention is on the words, but what about the <strong><em>expression</em></strong>? &nbsp;Expression in our voices&nbsp;tells us as much as the words. &nbsp;For example, expression&nbsp;can tell us what the speaker thinks about what they are saying, whether they are asking a question, whether the speaker is serious or sarcastic,&nbsp;and the speaker&#39;s emotional state. &nbsp;What does our vocal expression say?</p>
+
+<p>You can help us answer this important question&nbsp; For this task you will:</p>
+
+<ul>
+	<li><strong style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;">Answer some demographic questions.</strong></li>
+	<li><strong style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;">Listen to a recording of a person talking.</strong></li>
+	<li><strong><strong style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;">Provide 3&nbsp;or more keywords describing the expression you hear in the voice... &nbsp;That&#39;s it!</strong></strong></li>
+</ul>
+
+<p>Sound interesting? Read on...</p>
+</div>
+</div>
+
+<div class="row col-xs-12 col-md-12"><strong><strong><!-- Instructions --> </strong></strong>
+
+<div class="panel panel-primary">
+<div class="panel-heading"><strong><strong><b>Now the Fine Print...</b></strong></strong></div>
+
+<div class="panel-body">
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">Since this is official research conducted by the University of Illinois, before you may participate, you must provide consent inidicating that you 1) are informed about the procedure, 2) give your consent voluntarily (that is, participate because you want to), and 3) know that you can stop the task at any time (as with any Mechanical Turk task).</span></p>
+
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">We will ask you a few short demographic questions, and show you how the visuals work, if we have included any in your task. Then, we will ask you to do one or more of the following tasks:</span></p>
+
+<div>
+<ul>
+	<li style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">Listen to a speech sound,</li>
+	<li style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">Answer questions about the sound,</li>
+	<li style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">Look at some pictures of the sound,</li>
+	<li style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">And select the picture that best represents the sound.</li>
+</ul>
+</div>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">We will use your answers to help us understand the relationships among spoken language, possible visualizations of speech expression, and human perception. &nbsp;The results of this study will be published in conference proceedings, journals, and presented in meetings for educational purposes.</p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">Information obtained from you will not be presented in a personally identifiable form.</p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">We do not even know your identity.</p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">If you have questions about the study, you may email the investigator directing this research: &nbsp;Karrie Karahalios, Ph.D., kkarahal@illinois.edu, or the primary Ph.D student conducting this research: Mary Pietrowicz, mpietro2@illinois.edu.</p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 9px;">If you have any questions about your rights as a participant in this study or any concerns or complaints, please contact the University of Illinois Institutional Review Board at 217-333-2670 (collect calls will be accepted if you identify yourself as a research participant) or email at irb@illinois.edu.</p>
+</div>
+</div>
+
+<section>
+<fieldset>
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;"><strong>0.Do you consent to being part of this study, and do you want to do the task?</strong></p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">Click &quot;YES&quot; to do the task, and &quot;NO&quot; if you do NOT want to do the task.</p>
+
+<div style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<div class="radio"><label><input name="Consent" type="radio" value="yes" />YES</label></div>
+
+<div class="radio"><label><input name="Consent" type="radio" value="no" />NO</label></div>
+
+<div class="radio">&nbsp;</div>
+
+<div class="radio"><label>​</label><span style="line-height: 1.6em;">Now let&#39;s get started...</span></div>
+</div>
+
+<section>
+<fieldset>
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<p><label>1. Is English your first language?&nbsp;</label></p>
+
+<div class="radio"><label><input name="English" type="radio" value="Yes" />Yes</label></div>
+
+<div class="radio"><label><input name="English" type="radio" value="No" />No</label></div>
+</fieldset>
+
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<p><label>2. What is your gender?&nbsp;</label></p>
+
+<div class="radio"><label><input name="Gender" type="radio" value="Male" />Male</label></div>
+
+<div class="radio"><label><input name="Gender" type="radio" value="Female" />Female</label></div>
+</fieldset>
+
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<p><label>3. What is your age?&nbsp;</label></p>
+
+<div class="radio"><label><input name="Age" type="radio" value="1" />15-24</label></div>
+
+<div class="radio"><label><input name="Age" type="radio" value="2" />25-34</label></div>
+
+<div class="radio"><label><input name="Age" type="radio" value="3" />35-44</label></div>
+
+<div class="radio"><label><input name="Age" type="radio" value="4" />45-54</label></div>
+
+<div class="radio"><label><input name="Age" type="radio" value="5" />55-64</label></div>
+
+<div class="radio"><label><input name="Age" type="radio" value="6" />65+</label></div>
+</fieldset>
+
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<p><label>4. Where did you grow up? If multiple places, where did you spend most of your elementary school years? Please provide this information in the boxes below.</label></p>
+
+<p><label>Country</label></p>
+
+<p><i><textarea cols="80" name="country" rows="1"></textarea></i></p>
+
+<p><label>State or Province:</label></p>
+
+<p><i><textarea cols="80" name="state" rows="1"></textarea></i></p>
+
+<p><label>City</label></p>
+
+<p><i><textarea cols="80" name="city" rows="1"></textarea></i></p>
+</fieldset>
+
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<p><label>Tell us about your musical background.&nbsp;</label></p>
+
+<p><label>5a. Do you currently play an instrument,&nbsp;sing, or compose music?&nbsp;</label></p>
+
+<div class="radio"><label><input name="currentmusic" type="radio" value="Yes" />Yes</label></div>
+
+<div class="radio"><label><input name="currentmusic" type="radio" value="No" />No</label></div>
+
+<p><label>5b. Have you ever played an instrument, sung in a choir, or composed music?</label></p>
+
+<div class="radio"><label><input name="pastmusic" type="radio" value="Yes" />Yes</label></div>
+
+<div class="radio"><label><input name="pastmusic" type="radio" value="No" />No</label></div>
+
+<p><label>5c. Rank your level of musical ability as you perceive it, from Beginner (Level 1)&nbsp;to Expert&nbsp;(Level 5).</label></p>
+
+<div>
+<div class="radio"><label><input name="Music" type="radio" value="1" />1 - None/Beginner</label></div>
+
+<div class="radio"><label><input name="Music" type="radio" value="2" />2 &nbsp; .</label></div>
+
+<div class="radio"><label><input name="Music" type="radio" value="3" />3 &nbsp; .</label></div>
+
+<div class="radio"><label><input name="Music" type="radio" value="4" />4 &nbsp; .</label></div>
+
+<div class="radio"><label><input name="Music" type="radio" value="5" />5- Expert/Professional</label></div>
+</div>
+</fieldset>
+
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<p><label>Tell us about your acting background.&nbsp;</label></p>
+
+<p><label>6a. Do you currently participate in film or theater productions as an actor?&nbsp;</label></p>
+
+<div>
+<div class="radio"><label><input name="currentTheater" type="radio" value="Yes" />Yes</label></div>
+
+<div class="radio"><label><input name="currentTheater" type="radio" value="No" />No</label></div>
+</div>
+
+<p><label>6b. Have you ever had a speaking part in a stage or film production? &nbsp;</label></p>
+
+<div class="radio"><label><input name="pastTheater" type="radio" value="Yes" />Yes</label></div>
+
+<div class="radio"><label><input name="pastTheater" type="radio" value="No" />No</label></div>
+
+<p><label>6c. Rank your level of acting ability as you perceive it, from Beginner (Level 1)&nbsp;to Expert&nbsp;(Level 5).</label></p>
+
+<div>
+<div class="radio"><label><input name="Acting" type="radio" value="1" />1 - None/Beginner</label></div>
+
+<div class="radio"><label><input name="Acting" type="radio" value="2" />2 &nbsp; .</label></div>
+
+<div class="radio"><label><input name="Acting" type="radio" value="3" />3 &nbsp; .</label></div>
+
+<div class="radio"><label><input name="Acting" type="radio" value="4" />4 &nbsp; .</label></div>
+
+<div class="radio"><label><input name="Acting" type="radio" value="5" />5- Expert/Professional</label></div>
+</div>
+</fieldset>
+
+<fieldset style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">
+<div>
+<p><b style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: rgb(251, 251, 251);">This section of the survey will ask you to listen to a short voice recording, and provide keywords describing what you hear. &nbsp;Pay attention to the EXPRESSION in the voice. &nbsp;NOT the words. &nbsp;We are interested in HOW someone is speaking.</b><span style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: rgb(251, 251, 251);">&nbsp; </span></p>
+
+<p>Some examples of keywords that describe HOW someone is speaking are emotional words like: happy, sad, angry, etc. &nbsp;Again, pay attention to HOW the person speaks, not what they say.</p>
+
+<p>Other examples of keywords describing expression in the voice are words that describe what is happening to the speed of the voice, loudness in the voice, or whether the sound is high or low. &nbsp;Words in this category might include &quot;fast&quot;, &quot;loud&quot;, or&nbsp;&quot;speeding up&quot;. &nbsp;</p>
+
+<p>Finally, expression can involve the quality of the voice. &nbsp;Words like &quot;whispering,&quot; &quot;growling,&quot; &quot;breathy,&quot; &nbsp;or &quot;creaky&quot; are words that describe voice quality.</p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: rgb(251, 251, 251);"><strong>Now you try it.</strong></p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: rgb(251, 251, 251);"><span style="font-size: 14px; font-weight: bold;">7a. Listen to the recording of the utterance. &nbsp;Provide 3&nbsp;or more keywords describing the expression you hear in the voice.</span></p>
+
+<audio controls=""><source src="http://social.cs.uiuc.edu/people/marybp/Im_happy.wav" type="audio/wav" /><embed height="50" src="http://social.cs.uiuc.edu/people/marybp/Im_happy.wav" width="100"></embed></audio>
+
+<p style="font-size: 12px; font-weight: normal; "><i><textarea cols="80" name="qualifier" rows="3"></textarea></i></p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: rgb(251, 251, 251);">&nbsp;</p>
+
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; background-color: rgb(251, 251, 251);"><span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px; font-weight: bold; background-color: rgb(251, 251, 251);">7b. Here is another&nbsp;utterance. &nbsp;Again, listen to the recording. Then provide 3&nbsp;or more keywords describing the expression you hear in the voice.</span></p>
+
+<audio controls=""><source src="http://newsocial.cs.illinois.edu/people/marybp/veterans_study1/15_Feretti_ShortClips/15_Feretti_NF_114_2_1.wav" type="audio/wav" /><embed height="50" src="http://newsocial.cs.illinois.edu/people/marybp/veterans_study1/15_Feretti_ShortClips/15_Feretti_NF_114_2_1.wav" width="100"></embed></audio>
+
+<p style="font-size: 12px; font-weight: normal; "><i><textarea cols="80" name="voice1" rows="3"></textarea></i></p>
+
+<div>&nbsp;</div>
+
+<p>&nbsp;<span style="line-height: 19px;"><b>Thanks for participating and providing us with valuable input!</b></span></p>
+</div>
+</fieldset>
+
+<p>&nbsp;</p>
+</fieldset>
+</section>
+<strong><strong><!-- End Survey Body --></strong></strong></fieldset>
+</section>
+</div>
+</div>
+</section>
+
+<p><strong><strong><!-- close container -->
+<style type="text/css">fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }
+</style>
+</strong></strong></p>

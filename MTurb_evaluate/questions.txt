@@ -1,0 +1,7 @@
+1. How to set HITs
+2. How to set the number of scores per HITs
+3. How to track the workers and scores
+4. How to give additional rewards to good workers
+5. How to automatically give additional rewards to workers completing many HITs
+6. How to automatically reject HITs for workers submitting scores too quickly
+7. How to put audios in
