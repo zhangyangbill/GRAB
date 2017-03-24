@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Glottal Model Based Speech Beamforming for Ad Hoc Microphone Array</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						
+					</header>
+
+				<!-- Menu -->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Glottal Model Based Speech Beamforming for Ad Hoc Microphone Array: <font color = #58c3c2> Audio Demos</font></h1>
+							<font size = 5><p><i> Yang Zhang   &nbsp Dinei Flor&ecircncio &nbsp   Mark Hasegawa-Johnson</i></p></font>
+							<p></p>
+							<a href="#config" class="button fit">Configurations</a>
+							<a href="#results" class="button fit">Results</a>
+							<br></br><br></br>
+							<!-- Text -->
+								<section>
+								<a name="config"></a>
+									<h2><font size = 5 color= #58c3c2>Configurations</font></h2>
+									<p>
+									<font size=5>
+									To verify GRAB works in the intended scenario, we recorded a realistic dataset. The data were collected with eight different microphones. These mics were casually placed on the table of a conference room. There are two speakers, reading <i>My Grandfather</i> and <i>The Rainbow</i> respectively.
+									</p>
+									<p> Here are samples of <b><font color = #58c3c2> pure speech of speaker 1</font></b> recorded by each microphone: </p></font>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Mic ID</th>
+													<th>Description</th>
+													<th>Sample</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Wireless electret, <b>hissing</b></td>
+													<td><audio controls=""><source src="audios/pure_speech_1.wav" /><embed height="50" src="audios/pure_speech_1.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Wireless electret</td>
+													<td><audio controls=""><source src="audios/pure_speech_2.wav" /><embed height="50" src="audios/pure_speech_2.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Wireless electret</td>
+													<td><audio controls=""><source src="audios/pure_speech_3.wav" /><embed height="50" src="audios/pure_speech_3.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Wireless electret</td>
+													<td><audio controls=""><source src="audios/pure_speech_4.wav" /><embed height="50" src="audios/pure_speech_4.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Wired electret, <b>closest to speaker 2</b></td>
+													<td><audio controls=""><source src="audios/pure_speech_5.wav" /><embed height="50" src="audios/pure_speech_5.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>Wired electret,  <b>closest to speaker 1</b></td>
+													<td><audio controls=""><source src="audios/pure_speech_6.wav" /><embed height="50" src="audios/pure_speech_6.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>Wired electret</td>
+													<td><audio controls=""><source src="audios/pure_speech_7.wav" /><embed height="50" src="audios/pure_speech_7.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>Wired dynamic, <b>placed by a noisy fan</b></td>
+													<td><audio controls=""><source src="audios/pure_speech_8.wav" /><embed height="50" src="audios/pure_speech_8.wav" width="100"></embed></audio>
+</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<p><font size = 5>
+									Five different types of noise were recorded separately. Each was then mixed with the speech such that the SNR of the closest channel is 10dB.
+									</p>
+									<p>
+									Here are samples of each <b><font color = #58c3c2> pure noise</font></b> recorded by mic 3:
+									</p>
+									</font>
+									<p>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Noise ID</th>
+													<th>Description</th>
+													<th>Sample</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Cell phone</td>
+													<td><audio controls=""><source src="audios/pure_noise_1.wav" /><embed height="50" src="audios/pure_noise_1.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Paper binding machine</td>
+													<td><audio controls=""><source src="audios/pure_noise_2.wav" /><embed height="50" src="audios/pure_noise_2.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Paper shuffle</td>
+													<td><audio controls=""><source src="audios/pure_noise_3.wav" /><embed height="50" src="audios/pure_noise_3.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Door slide & bang</td>
+													<td><audio controls=""><source src="audios/pure_noise_4.wav" /><embed height="50" src="audios/pure_noise_4.wav" width="100"></embed></audio>
+</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Footstep</td>
+													<td><audio controls=""><source src="audios/pure_noise_5.wav" /><embed height="50" src="audios/pure_noise_5.wav" width="100"></embed></audio>
+</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									</p>
+									<p>
+									<a href="#" class="button special">Back to Top</a>
+									<a href="#config" class="button special">Back to Section Start</a>
+									</p>
+									<br></br><br></br>
+								</section>
+								<section>
+									<a name="results"></a>
+									<font size = 5, color = #58c3c2>
+									<h2>Results</h2>
+									</font>
+									<font size = 5>
+									<p>Below are the audios processed by the four difference algorithms.
+									<ul class="12u 12u$(medium)">
+										<li><b><font color = #58c3c2>GRAD</font></b> - the proposed algorithm</li>
+										<li><b><font color = #58c3c2>Closest</font></b> - the closest mic strategy</li>
+										<li><b><font color = #58c3c2>IVA</font></b> - independent vector analysis with Laplacian prior</li>
+										<li><b><font color = #58c3c2>MVDR</font></b> - time-domain MVDR </li>
+									</ul>
+									</p>
+									<p>These audios were part of our subject evaluation on the Amazon Mechanical Turk.</p>
+									</font>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Noise Type</th>
+													<th>Speaker</th>
+													<th>Results</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="4">Cell Phone</td>
+													<td rowspan="4">1</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n1_sp1_mt1.wav" /><embed height="50" src="audios/n1_sp1_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n1_sp1_mt2.wav" /><embed height="50" src="audios/n1_sp1_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n1_sp1_mt3.wav" /><embed height="50" src="audios/n1_sp1_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n1_sp1_mt4.wav" /><embed height="50" src="audios/n1_sp1_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4"></td>
+													<td rowspan="4">2</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n1_sp2_mt1.wav" /><embed height="50" src="audios/n1_sp2_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n1_sp2_mt2.wav" /><embed height="50" src="audios/n1_sp2_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n1_sp2_mt3.wav" /><embed height="50" src="audios/n1_sp2_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n1_sp2_mt4.wav" /><embed height="50" src="audios/n1_sp2_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4">Paper binding machine</td>
+													<td rowspan="4">1</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n2_sp1_mt1.wav" /><embed height="50" src="audios/n2_sp1_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n2_sp1_mt2.wav" /><embed height="50" src="audios/n2_sp1_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n2_sp1_mt3.wav" /><embed height="50" src="audios/n2_sp1_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n2_sp1_mt4.wav" /><embed height="50" src="audios/n2_sp1_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4"></td>
+													<td rowspan="4">2</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n2_sp2_mt4.wav" /><embed height="50" src="audios/n2_sp2_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n2_sp2_mt2.wav" /><embed height="50" src="audios/n2_sp2_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n2_sp2_mt3.wav" /><embed height="50" src="audios/n2_sp2_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n2_sp2_mt4.wav" /><embed height="50" src="audios/n2_sp2_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4">Paper shuffle</td>
+													<td rowspan="4">1</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n3_sp1_mt1.wav" /><embed height="50" src="audios/n3_sp1_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n3_sp1_mt2.wav" /><embed height="50" src="audios/n3_sp1_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n3_sp1_mt3.wav" /><embed height="50" src="audios/n3_sp1_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n3_sp1_mt4.wav" /><embed height="50" src="audios/n3_sp1_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4"></td>
+													<td rowspan="4">2</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n3_sp2_mt1.wav" /><embed height="50" src="audios/n3_sp2_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n3_sp2_mt2.wav" /><embed height="50" src="audios/n3_sp2_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n3_sp2_mt3.wav" /><embed height="50" src="audios/n3_sp2_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n3_sp2_mt4.wav" /><embed height="50" src="audios/n3_sp2_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4">Door slide & bang</td>
+													<td rowspan="4">1</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n4_sp1_mt1.wav" /><embed height="50" src="audios/n4_sp1_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n4_sp1_mt2.wav" /><embed height="50" src="audios/n4_sp1_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n4_sp1_mt3.wav" /><embed height="50" src="audios/n4_sp1_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n4_sp1_mt4.wav" /><embed height="50" src="audios/n4_sp1_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4"></td>
+													<td rowspan="4">2</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n4_sp2_mt1.wav" /><embed height="50" src="audios/n4_sp2_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n4_sp2_mt2.wav" /><embed height="50" src="audios/n4_sp2_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n4_sp2_mt3.wav" /><embed height="50" src="audios/n4_sp2_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n4_sp2_mt4.wav" /><embed height="50" src="audios/n4_sp2_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4">Footstep</td>
+													<td rowspan="4">1</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n5_sp1_mt1.wav" /><embed height="50" src="audios/n5_sp1_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n5_sp1_mt2.wav" /><embed height="50" src="audios/n5_sp1_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n5_sp1_mt3.wav" /><embed height="50" src="audios/n5_sp1_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n5_sp1_mt4.wav" /><embed height="50" src="audios/n5_sp1_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td rowspan="4"></td>
+													<td rowspan="4">2</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n5_sp2_mt1.wav" /><embed height="50" src="audios/n5_sp2_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>Closest</td>
+													<td><audio controls=""><source src="audios/n5_sp2_mt2.wav" /><embed height="50" src="audios/n5_sp2_mt2.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>IVA</td>
+													<td><audio controls=""><source src="audios/n5_sp2_mt3.wav" /><embed height="50" src="audios/n5_sp2_mt3.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>MVDR</td>
+													<td><audio controls=""><source src="audios/n5_sp2_mt4.wav" /><embed height="50" src="audios/n5_sp2_mt4.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<a href="#" class="button special">Back to Top</a>
+									<a href="#results" class="button special">Back to Section Start</a>
+								</section>
+							
+									
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,28 @@
+%% write results
+
+noise_seq = [3 2 1 5 4];
+speaker = {'Dinei', 'Yang'};
+method = {'grab', 'closest', 'iva', 'mvdr'};
+from_dir = 'C:\Users\yzhan143\My Research\2016_MSR_intern\MTurb_evaluate\170313\';
+
+for nid = 1 : 5
+    for sp_id = 1 : 2
+        for mt_id = 1 : 4
+            % read audio
+            s1 = audioread([from_dir, speaker{sp_id}, '\', method{mt_id}, '_n', num2str(noise_seq(nid)), '_s1.wav']);
+            s2 = audioread([from_dir, speaker{sp_id}, '\', method{mt_id}, '_n', num2str(noise_seq(nid)), '_s2.wav']);
+            audiowrite(['n', num2str(nid), '_sp', num2str(sp_id), '_mt', num2str(mt_id), '.wav'], [s1; s2], 16000);
+        end
+    end
+end
+
+%% write pure speech
+dir = 'C:\Users\yzhan143\My Research\2016_MSR_intern\data2\Dinei2\';
+% high pass filter
+h = firpm(300, [0 30/8000 70/8000 1], [0 0 1 1], [1, 10]);
+slect_range = [5.185 7.725 10.622];
+
+for ch_id = 1 : 8
+    s1 = audioread(['C:\Users\yzhan143\My Research\2016_MSR_intern\data2\Dinei2\Track ', num2str(ch_id), '_015.wav']);
+    s1 = filter()
+end
