@@ -41,14 +41,14 @@
 									<font size=5>
 									To verify GRAB works in the intended scenario, we recorded a realistic dataset. The data were collected with eight different microphones. These mics were casually placed on the table of a conference room. There are two speakers, reading <i>My Grandfather</i> and <i>The Rainbow</i> respectively.
 									</p>
-									<p> Here are samples of <b><font color = #58c3c2> pure speech of speaker 1</font></b> recorded by each microphone: </p></font>
+									<p> Here are samples of <b>pure speech of speaker 1</b> recorded by each microphone: </p></font>
 									<div class="table-wrapper">
 										<table>
 											<thead>
 												<tr>
-													<th>Mic ID</th>
-													<th>Description</th>
-													<th>Sample</th>
+													<th><font color= #58c3c2>Mic ID</font></th>
+													<th><font color= #58c3c2>Description</font></th>
+													<th><font color= #58c3c2>Sample</font></th>
 												</tr>
 											</thead>
 											<tbody>
@@ -108,7 +108,7 @@
 									Five different types of noise were recorded separately. Each was then mixed with the speech such that the SNR of the closest channel is 10dB.
 									</p>
 									<p>
-									Here are samples of each <b><font color = #58c3c2> pure noise</font></b> recorded by mic 3:
+									Here are samples of each <b>pure noise</b> recorded by mic 3:
 									</p>
 									</font>
 									<p>
@@ -116,9 +116,9 @@
 										<table>
 											<thead>
 												<tr>
-													<th>Noise ID</th>
-													<th>Description</th>
-													<th>Sample</th>
+													<th><font color= #58c3c2>Noise ID</font></th>
+													<th><font color= #58c3c2>Description</font></th>
+													<th><font color= #58c3c2>Sample</font></th>
 												</tr>
 											</thead>
 											<tbody>
@@ -170,10 +170,10 @@
 									<font size = 5>
 									<p>Below are the audios processed by the four difference algorithms.
 									<ul class="12u 12u$(medium)">
-										<li><b><font color = #58c3c2>GRAD</font></b> - the proposed algorithm</li>
-										<li><b><font color = #58c3c2>Closest</font></b> - the closest mic strategy</li>
-										<li><b><font color = #58c3c2>IVA</font></b> - independent vector analysis with Laplacian prior</li>
-										<li><b><font color = #58c3c2>MVDR</font></b> - time-domain MVDR </li>
+										<li><b>GRAD</b> - the proposed algorithm</li>
+										<li><b>Closest</b> - the closest mic strategy</li>
+										<li><b>IVA</b> - independent vector analysis with Laplacian prior</li>
+										<li><b>MVDR</b> - time-domain MVDR </li>
 									</ul>
 									</p>
 									<p>These audios were part of our subject evaluation on the Amazon Mechanical Turk.</p>
@@ -182,15 +182,15 @@
 										<table>
 											<thead>
 												<tr>
-													<th>Noise Type</th>
-													<th>Speaker</th>
-													<th>Results</th>
+													<th><font color= #58c3c2>Noise Type</font></th>
+													<th><font color= #58c3c2>Speaker</font></th>
+													<th><font color= #58c3c2>Results</font></th>
 													<th></th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td rowspan="4">Cell Phone</td>
+													<td rowspan="8">Cell Phone</td>
 													<td rowspan="4">1</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n1_sp1_mt1.wav" /><embed height="50" src="audios/n1_sp1_mt1.wav" width="100"></embed></audio>
@@ -212,7 +212,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4"></td>
+													
 													<td rowspan="4">2</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n1_sp2_mt1.wav" /><embed height="50" src="audios/n1_sp2_mt1.wav" width="100"></embed></audio>
@@ -234,7 +234,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4">Paper binding machine</td>
+													<td rowspan="8">Paper binding machine</td>
 													<td rowspan="4">1</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n2_sp1_mt1.wav" /><embed height="50" src="audios/n2_sp1_mt1.wav" width="100"></embed></audio>
@@ -256,7 +256,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4"></td>
+													
 													<td rowspan="4">2</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n2_sp2_mt4.wav" /><embed height="50" src="audios/n2_sp2_mt4.wav" width="100"></embed></audio>
@@ -278,7 +278,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4">Paper shuffle</td>
+													<td rowspan="8">Paper shuffle</td>
 													<td rowspan="4">1</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n3_sp1_mt1.wav" /><embed height="50" src="audios/n3_sp1_mt1.wav" width="100"></embed></audio>
@@ -300,7 +300,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4"></td>
+													
 													<td rowspan="4">2</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n3_sp2_mt1.wav" /><embed height="50" src="audios/n3_sp2_mt1.wav" width="100"></embed></audio>
@@ -322,7 +322,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4">Door slide & bang</td>
+													<td rowspan="8">Door slide & bang</td>
 													<td rowspan="4">1</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n4_sp1_mt1.wav" /><embed height="50" src="audios/n4_sp1_mt1.wav" width="100"></embed></audio>
@@ -344,7 +344,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4"></td>
+													
 													<td rowspan="4">2</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n4_sp2_mt1.wav" /><embed height="50" src="audios/n4_sp2_mt1.wav" width="100"></embed></audio>
@@ -366,7 +366,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4">Footstep</td>
+													<td rowspan="8">Footstep</td>
 													<td rowspan="4">1</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n5_sp1_mt1.wav" /><embed height="50" src="audios/n5_sp1_mt1.wav" width="100"></embed></audio>
@@ -388,7 +388,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="4"></td>
+													
 													<td rowspan="4">2</td>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n5_sp2_mt1.wav" /><embed height="50" src="audios/n5_sp2_mt1.wav" width="100"></embed></audio>
